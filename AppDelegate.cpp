@@ -80,12 +80,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	jumpAnimation->setDelayPerUnit(0.02);
 	AnimationCache::getInstance()->addAnimation(jumpAnimation, "ninjaJumpAnimation");
 
-    auto i = AnimationCache::getInstance();
+	auto i = AnimationCache::getInstance();
 
 	//load monster dead animation
-	
+
 	// run
-    auto scene = GameScene::createScene();
+	auto scene = GameScene::createScene();
 	director->runWithScene(scene);
 
 	return true;
@@ -106,3 +106,9 @@ void AppDelegate::applicationWillEnterForeground() {
 	// if you use SimpleAudioEngine, it must resume here
 	// SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 }
+
+
+
+
+
+
